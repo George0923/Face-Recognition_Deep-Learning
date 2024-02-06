@@ -1,0 +1,14 @@
+data_need_to_be_sort => 放要測試&驗證的圖片檔案
+
+result => 會放入AI model認為是屬於source內的人物(ex:Hikari_Mori_01... .jpg in "source")的圖片
+
+result_unkown => 會放入AI model認為不屬於source內的人物或物品
+
+source => AI model的訓練圖片數據 (分為要偵測的人物(ex:Hikari_Mori) 和要排除的人物或物品(Unknown) 
+格式:Hikari_Mori.編號.jpg,   Unknown.編號.jpg		(因為程式裡抓編號是抓split(".")[-3]位置的
+
+test => 會放入AI model認為不是屬於source內的人物或物品(ex:Unknown.jpg in "source")的圖片
+
+
+要改變路徑時記得用VS打開python檔後去修改內部的數據位置
+
